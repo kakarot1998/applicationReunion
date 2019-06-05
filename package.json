@@ -1,0 +1,37 @@
+{
+  "name": "application-reunion",
+  "version": "1.0.0",
+  "description": "Application pour gestion des reunions en temps reel avec d'autres foncinalites",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js --exec babel-node -e js"
+  },
+  "author": "ELMENDILI YASSIR / KHALILI KHALIL",
+  "license": "MIT",
+  "dependencies": {
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "*",
+    "express-messages": "*",
+    "express-session": "^1.16.1",
+    "express-validator": "*",
+    "http-server": "^0.11.1",
+    "jade": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "multer": "*",
+    "nodemon": "^1.19.1", 
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "socket.io": "^2.2.0",
+    "bcrypt": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
