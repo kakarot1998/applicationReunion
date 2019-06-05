@@ -5,6 +5,6 @@ Goals :
 
 1-implementation des salons avec socket.io
 
-2-ajout d'un middlware passport pour les reservation des salons
+2-ajout d'un middlware passport pour la reservation des salons
 
 3-consultation et upload des documents
