@@ -16,6 +16,9 @@ const UserTable = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+  message: {
+    type : String
   }
 });
 

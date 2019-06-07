@@ -4,6 +4,8 @@ const bcrypt = require('bcrypt');
 const passport = require('passport');
 //table user
 const userModel = require('../models/userModel');
+const { ensureAuthenticated } = require('../config/auth');
+
 
 
 
@@ -105,7 +107,6 @@ router.get('/logout', (req, res) => {
     req.flash('success_msg', 'You are logged out');
     res.redirect('/users/login');
   });
-
 
 
 module.exports = router;    
