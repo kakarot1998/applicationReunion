@@ -1,7 +1,7 @@
 const express = require('express');
 const app = require('express')();
 const server = require('http').Server(app);
-const io = require('socket.io')(server);
+const io = require('socket.io').listen(server);
 const port = 3000;
 var session = require('express-session');
 var passport = require('passport');
@@ -74,9 +74,14 @@ app.use(function(req, res, next) {
 
 
 });
+io.on('connection',socket =>{
+    socket.emit('chat-message','Mr7ba')
+
+
+
+})
 
 //routes
 app.use('/',require('./routes/index.js'));
 app.use('/users',require('./routes/users.js'));
-
-
+app.use('/rooms',require('./routes/rooms.js'));
