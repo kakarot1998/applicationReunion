@@ -1,13 +1,46 @@
-<h1 class="mt-4">Salon</h1>
-
+<h1 class="mt-4" background>Salons</h1>
 <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
 <script defer src="/home/yassir/applicationReunion/chat.js"></script>
 
-<div id="message-containter">
+<div class="containter">
+
+    <div class="row">
+        <style>
+        .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        
+        </style>
+        <div class="column">
+        <h1 class="text-left">Salon 1           </br>
+            <a href="/rooms/room1" class="btn btn-success">Entrer</a>        
+    </h1></div>
+    <div class="column">
+            <h1 class="text-left">Salon 2           </br>
+                <a href="/rooms/room2" class="btn btn-success">Entrer</a>        
+            
+        </h1></div>
+        <div class="column">
+                <h1 class="text-left">Salon 3          </br>
+                    <a href="/rooms/room3" class="btn btn-success">Entrer</a>        
+                
+            </h1></div>
+            <div class="column">
+                    <h1 class="text-left">Salon 4           </br>
+                        <a href="/rooms/room4" class="btn btn-success">Entrer</a>        
+                    
+                </h1></div>
+
+
+    </div>
+
+
 </div>
-<form id="send-container">
-    <input type="text" id="message"> 
-    <button type="submit" id="send-button">Send</button>
-
-
-</form>
