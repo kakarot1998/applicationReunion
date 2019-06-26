@@ -14,7 +14,9 @@ var mongoose = require('mongoose');
 const expressLayouts = require('express-ejs-layouts');
 //const userModel = require('../models/userModel');
 usernames = [];
+var path = require('path');
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 var db = mongoose.connection;
 //DB Conf
