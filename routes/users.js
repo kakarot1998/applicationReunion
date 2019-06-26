@@ -10,6 +10,8 @@ const { ensureAuthenticated } = require('../config/auth');
 
 
 //login route
+router.get('/home', (req, res) => res.render('home'));
+router.get('/about', (req, res) => res.render('about'));
 router.get('/login', (req, res) => res.render('login'));
 
 //register route
